@@ -3,7 +3,7 @@ In this project, I created through Azure a vulnerable Win10 x64 VM and deployed 
 
 Here's a walkthrough:
 
-Step 1: Create a Virtual Network for your Resource Group in Azure.
+Step 1: Created a Virtual Network for my Resource Group in Azure.
 
 ![Image Alt](https://github.com/alemuscyber/HoneypotVM/blob/64acd06a5158cbd21d3ac85f42bdb9a36911d6e4/Screenshot%202026-07-14%20220649.png)
 
