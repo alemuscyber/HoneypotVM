@@ -4,3 +4,5 @@ In this project, I created through Azure a vulnerable Win10 x64 VM and deployed 
 ![Image Alt](https://github.com/alemuscyber/HoneypotVM/blob/64acd06a5158cbd21d3ac85f42bdb9a36911d6e4/Screenshot%202026-07-14%20220649.png)
 
 ![Image Alt](https://github.com/alemuscyber/HoneypotVM/blob/a826972951f5ce2433515dfc922469f065a0e476/Screenshot%202026-07-14%20220758.png)
+
+![Image Alt](https://github.com/alemuscyber/HoneypotVM/blob/5d8d41f7e3eb99ec165484ad439b71dde107419e/Screenshot%202026-07-14%20220918.png)
