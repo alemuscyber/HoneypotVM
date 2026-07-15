@@ -14,6 +14,10 @@ I assigned an inbound rule to allow any for Port, Protocol, Souce, Destination. 
 Step 4: Accesing the VM and disabling all FW policies
 This makes our VM highly vulnerable and attractive for potential attackers. For this lab, I turned off the FW for all profiles (Domain, Private, Public).
 
+Step 5: Creating our Log Analytics Workplace
+The value of this lab, asides from the honeypot itself, is not having to directly access the VM to review the internal security logs. These logs can actually be forwarded and centralized in Azures Log Analytics Workplace and you can analyze them using KQL. Here's an example of a query:
+
+
 
 
 ![Image Alt](https://github.com/alemuscyber/HoneypotVM/blob/64acd06a5158cbd21d3ac85f42bdb9a36911d6e4/Screenshot%202026-07-14%20220649.png)
