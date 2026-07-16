@@ -15,7 +15,7 @@ Setting up admin account, giving the machine an attractive name to lure attacker
 
 Step 3: Modifying the Security Group of the VM
 
-I assigned an inbound rule to allow any for Port, Protocol, Souce, Destination. This makes our VM reachable and vulnerable over the virtual network. To ensure reachability I sent icmp pings to the VMs ip and got succesfull replies.
+I assigned an inbound rule to allow any for Port, Protocol, Souce, Destination. This makes our VM reachable and vulnerable over the virtual network. To ensure reachability I sent ICMP Pings to the VMs IP Address and got succesfull replies.
 
 ![Image Alt](https://github.com/alemuscyber/HoneypotVM/blob/3b995e07f23c23760adaaba751ead4a2c66ffe97/Screenshot%202026-07-15%20172344.png)
 
@@ -27,7 +27,7 @@ This makes our VM highly vulnerable and attractive for potential attackers. For 
 
 Step 5: Creating our Log Analytics Workspace
 
-The value of this lab, asides from the honeypot itself, is not having to directly access the VM to review the internal security logs. These logs can actually be forwarded and centralized in Azures Log Analytics Workplace. For this, I installed Windows Security Events solution which uses both AMA (Azure Monitor Agent) and a Legacy Agent. After installing the solutions I established the connection from the VM to the workspace, this can only happen by creating a DCR (Data Collection Rule) and link it to the resource group. I configured the rule to stream *all security events*.  Once this is done, the connection is now succesful. You can verify the stream and storage of security events using KQL in the Log Analytics Workspace. Here's an example of a query:
+The value of this lab, asides from the honeypot itself, is avoiding to access the VM to review the internal security logs. These logs can actually be forwarded and centralized in Azures Log Analytics Workplace. For this, I installed Windows Security Events solution which uses both AMA (Azure Monitor Agent) and a Legacy Agent. After installing the solutions I established the connection from the VM to the workspace, this can only happen by creating a DCR (Data Collection Rule) and link it to the resource group. I configured the rule to stream *all security events*.  Once this is done, the connection is now succesful. You can verify the stream and storage of security events using KQL in the Log Analytics Workspace. Here's an example of a query:
 
 ![Image Alt](https://github.com/alemuscyber/HoneypotVM/blob/e6af539aaec3b7b6933321defca89332840d9594/Screenshot%202026-07-15%20180738.png)
 *Note: It already queries existing security events because I took this screenshot about an hour after. You can expect to get your security events during this time as well, if you do it to early you'll probably be querying system noise.*
