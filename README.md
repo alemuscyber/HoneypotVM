@@ -23,6 +23,8 @@ Step 4: Accesing the VM and disabling all FW policies
 
 This makes our VM highly vulnerable and attractive for potential attackers. For this lab, I turned off the FW for all profiles (Domain, Private, Public).
 
+![Image Alt](https://github.com/alemuscyber/HoneypotVM/blob/645ef3c2e06db9a510fa8c6070264d1ea9eebb4c/VMfw_turnoff.png)
+
 Step 5: Creating our Log Analytics Workspace
 
 The value of this lab, asides from the honeypot itself, is not having to directly access the VM to review the internal security logs. These logs can actually be forwarded and centralized in Azures Log Analytics Workplace. For this, I installed Windows Security Events solution which uses both AMA (Azure Monitor Agent) and a Legacy Agent. After installing the solutions I established the connection from the VM to the workspace, this can only happen by creating a DCR (Data Collection Rule) and link it to the resource group. I configured the rule to stream *all security events*.  Once this is done, the connection is now succesful. You can verify the stream and storage of security events using KQL in the Log Analytics Workspace. Here's an example of a query:
