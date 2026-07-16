@@ -11,6 +11,8 @@ Step 2: Created the VM using a Win10 x64 image.
 
 Setting up admin account, giving the machine an attractive name to lure attackers to it, allowing RDP port 3389, assigning the network interface to my virtual network I created in step 1, also established a default subnet being 10.0.0.0/24. I configured a basic NIC Security Group, disabled boot diagnostics.
 
+![Image Alt](https://github.com/alemuscyber/HoneypotVM/blob/87718f192f6ca9c19221cd941557be7f5017e5b5/Screenshot%202026-07-15%20172048.png)
+
 Step 3: Modifying the Security Group of the VM
 
 I assigned an inbound rule to allow any for Port, Protocol, Souce, Destination. This makes our VM reachable and vulnerable over the virtual network. To ensure reachability I sent icmp pings to the VMs ip and got succesfull replies.
