@@ -5,7 +5,7 @@ In this project, I created through Azure a vulnerable Win10 x64 VM and deployed 
 
 Here's a walkthrough:
 
-Step 1: Created a Virtual Network for my Resource Group in Azure.
+Step 1: Establishing a Virtual Network for my Resource Group in Azure.
 
 Step 2: Created the VM using a Win10 x64 image.
 
